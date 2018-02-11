@@ -315,5 +315,5 @@ func (self *Response) Data() *map[string]interface{} {
 // Use this method to output the response data (instead of beego method)
 func (self *Response) ServeJSON() {
 
-	self.context.Output.Json(self.data["data"], true, false)
+	self.context.Output.JSON(self.data["data"], true, false)
 }
